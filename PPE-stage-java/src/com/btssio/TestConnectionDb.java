@@ -17,7 +17,6 @@ public class TestConnectionDb {
 
 		      Connection conn = DriverManager.getConnection(url, user, passwd);
 		      System.out.println("Connexion effective !");
-		      System.out.println("Ok");
 
 		    } catch (Exception e) {
 		      e.printStackTrace();
