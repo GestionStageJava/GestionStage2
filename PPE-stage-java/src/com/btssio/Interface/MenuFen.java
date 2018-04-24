@@ -48,4 +48,9 @@ public class MenuFen extends JFrame {
 	public void setConteneur(JPanel conteneur) {
 		this.conteneur = conteneur;
 	}
+
+	public void changePanel(){
+		this.setContentPane();
+		this.revalidate();
+	}
 }

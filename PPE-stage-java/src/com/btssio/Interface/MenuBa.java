@@ -8,15 +8,7 @@ import com.btssio.controller.Cmenu;
 
 public class MenuBa extends JMenuBar{
 
-	//Menu
-	private JMenu m1 = new JMenu("Fichier");
 	private JMenu m2 = new JMenu("Eleve");
-	private JMenu m3 = new JMenu("Entreprise");
-	private JMenu m4 = new JMenu("Configuration");
-	private Cmenu cmenu;
-
-	//MenuItem
-	private JMenuItem menuItemListEleve = new JMenuItem("Lister");
 	private JMenuItem menuItemEditEleve = new JMenuItem("Editer");
 	private JMenuItem menuItemCreateEleve = new JMenuItem("Creer");
 	private JMenuItem menuItemListEntr = new JMenuItem("Lister");
@@ -61,27 +53,38 @@ public class MenuBa extends JMenuBar{
 		this.m3.add(menuItemCreateEntr);
 		this.menuItemCreateEntr.setActionCommand("Create entreprise");
 		
+		this.m3.add(menuItemCreateEntr);
+<<<<<<< HEAD
+		this.menuItemCreateEntr.setActionCommand("Create entreprise");
+		
 		//Menu add action listener
+
 		//m1
+
 		this.menuItemAccueil.addActionListener(cmenu);
 		this.menuItemQuit.addActionListener(cmenu);
 		
 		//m2
+
 		this.menuItemListEleve.addActionListener(cmenu);
 		this.menuItemEditEleve.addActionListener(cmenu);
 		this.menuItemCreateEleve.addActionListener(cmenu);
 
 		//m3
+
 		this.menuItemListEntr.addActionListener(cmenu);
 		this.menuItemEditEntr.addActionListener(cmenu);
 		this.menuItemCreateEntr.addActionListener(cmenu);
+
+=======
 		this.menuItemCreateEntr.addActionListener(new Cmenu(this));
 		
-		//m4
+			//m4
 		this.m4.setText("Configuration");
 		this.m4.addActionListener(new Cmenu(this));
+>>>>>>> master
 
-		//Ajout label au menu
+			//Ajout label au menu
 		this.add(this.m1);
 		this.add(this.m2);
 		this.add(this.m3);
