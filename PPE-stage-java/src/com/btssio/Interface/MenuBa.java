@@ -8,7 +8,13 @@ import com.btssio.controller.Cmenu;
 
 public class MenuBa extends JMenuBar{
 
+	private JMenu m1 = new JMenu("Fichier");
 	private JMenu m2 = new JMenu("Eleve");
+	private JMenu m3 = new JMenu("Entreprise");
+	
+	private Cmenu cmenu;
+	
+	private JMenuItem menuItemListEleve = new JMenuItem("Lister");
 	private JMenuItem menuItemEditEleve = new JMenuItem("Editer");
 	private JMenuItem menuItemCreateEleve = new JMenuItem("Creer");
 	private JMenuItem menuItemListEntr = new JMenuItem("Lister");
@@ -16,6 +22,7 @@ public class MenuBa extends JMenuBar{
 	private JMenuItem menuItemCreateEntr = new JMenuItem("Creer");
 	private JMenuItem menuItemAccueil = new JMenuItem("Accueil");
 	private JMenuItem menuItemQuit = new JMenuItem("Quitter");
+	private JMenuItem menuItemConf = new JMenuItem("Configuration");
 
 	
 	public MenuBa() {
@@ -29,6 +36,9 @@ public class MenuBa extends JMenuBar{
 		//m1
 		this.m1.add(menuItemAccueil);
 		this.menuItemAccueil.setActionCommand("Accueil");
+		
+		this.m1.add(menuItemConf);
+		this.menuItemConf.setActionCommand("Configuration");
 		
 		this.m1.add(menuItemQuit);
 		this.menuItemQuit.setActionCommand("Quitter");
@@ -54,7 +64,6 @@ public class MenuBa extends JMenuBar{
 		this.menuItemCreateEntr.setActionCommand("Create entreprise");
 		
 		this.m3.add(menuItemCreateEntr);
-<<<<<<< HEAD
 		this.menuItemCreateEntr.setActionCommand("Create entreprise");
 		
 		//Menu add action listener
@@ -76,18 +85,11 @@ public class MenuBa extends JMenuBar{
 		this.menuItemEditEntr.addActionListener(cmenu);
 		this.menuItemCreateEntr.addActionListener(cmenu);
 
-=======
 		this.menuItemCreateEntr.addActionListener(new Cmenu(this));
-		
-			//m4
-		this.m4.setText("Configuration");
-		this.m4.addActionListener(new Cmenu(this));
->>>>>>> master
 
 			//Ajout label au menu
 		this.add(this.m1);
 		this.add(this.m2);
 		this.add(this.m3);
-		this.add(this.m4);
 	}
 }
