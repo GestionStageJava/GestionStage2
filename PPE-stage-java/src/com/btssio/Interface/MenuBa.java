@@ -67,7 +67,11 @@ public class MenuBa extends JMenuBar{
 		//Menu add action listener
 		//m1
 		this.menuItemAccueil.addActionListener(cmenu);
+<<<<<<< Updated upstream
 		this.menuItemConfig.addActionListener(cmenu);
+=======
+		this.menuItemConf.addActionListener(cmenu);
+>>>>>>> Stashed changes
 		this.menuItemQuit.addActionListener(cmenu);
 		
 		//m2
