@@ -6,6 +6,8 @@ public class DTOEntreprise {
 	private long id;
 	private String nomlieu;
 	
+	public DTOEntreprise() {};
+	
 	public DTOEntreprise(long id, String nomlieu) {
 		super();
 		this.id = id;
