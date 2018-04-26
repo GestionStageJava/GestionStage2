@@ -64,6 +64,12 @@ public class MenuBa extends JMenuBar{
 		this.m3.add(menuItemCreateEntr);
 		this.menuItemCreateEntr.setActionCommand("Create entreprise");
 		
+<<<<<<< Updated upstream
+=======
+		this.m3.add(menuItemCreateEntr);
+		this.menuItemCreateEntr.setActionCommand("Create entreprise");
+		
+>>>>>>> Stashed changes
 		//Menu add action listener
 		//m1
 		this.menuItemAccueil.addActionListener(cmenu);
@@ -78,8 +84,13 @@ public class MenuBa extends JMenuBar{
 		//m3
 		this.menuItemListEntr.addActionListener(cmenu);
 		this.menuItemEditEntr.addActionListener(cmenu);
+<<<<<<< Updated upstream
 		this.menuItemCreateEntr.addActionListener(cmenu);
 		this.menuItemCreateEntr.addActionListener(new Cmenu(this));
+=======
+		this.menuItemCreateEntr.addActionListener(cmenu);
+
+>>>>>>> Stashed changes
 
 		//Ajout label au menu
 		this.add(this.m1);
